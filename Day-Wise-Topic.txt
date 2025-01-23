@@ -1,0 +1,11 @@
+Day-1 [15- Jan - 2025]
+    Topic (Javascript Core)
+        1. Scoping 
+        2. Variables
+        3. Hoisting In Javascript
+
+Day-2 [22- Jan - 2025]
+    Topic (Javascript Core)
+        1. Function
+        2. Closures
+
