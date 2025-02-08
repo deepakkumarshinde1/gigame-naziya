@@ -86,3 +86,20 @@ result10.child1();
 result10.child1();
 result10.child();
 result10.child();
+
+// data types in javascript
+// 1. Primitive data types (data by value)
+// 1.1 Number
+// 1.2 String
+// 1.3 Boolean
+// 1.4 Null
+// 1.5 Undefined
+// 1.6 Symbol
+// 2. Non Primitive data types (data by reference)
+// 2.1 Object
+// 2.2 Array
+// 2.3 Function
+
+// check a data type of variable
+let num = 10;
+console.log(typeof num); // number

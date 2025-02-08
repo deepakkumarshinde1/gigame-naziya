@@ -9,3 +9,11 @@ Day-2 [22- Jan - 2025]
         1. Function
         2. Closures
 
+Day-2 [29- Jan - 2025]
+    Topic (Javascript Core)
+        1. Event Loop
+        2. This
+        3. Prototyping 
+        4. Class
+
+
