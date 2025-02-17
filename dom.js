@@ -146,8 +146,12 @@ let Employee = {
   age: 33,
 };
 
-function printDetails() {
+function printDetails(a, b) {
   console.log(this);
 }
 
 // printDetails();
+printDetails.call(Employee, 10, 20);
+printDetails.apply(Employee, [10, 20]);
+let newFunction = printDetails.bind(Employee);
+newFunction(10, 20);
