@@ -1,8 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
-import { increment } from "./redux/slice/counter.slice";
+import { getUserList, increment } from "./redux/slice/counter.slice";
 import { useEffect } from "react";
-import apis from "./redux/services/apis";
 
 function App() {
   let dispatch = useDispatch();
@@ -10,7 +9,7 @@ function App() {
 
   useEffect(() => {
     let url = "https://jsonplaceholder.typicode.com/users";
-    dispatch(apis.getUsersList(url));
+    dispatch(getUserList(url));
   }, []);
   return (
     <>

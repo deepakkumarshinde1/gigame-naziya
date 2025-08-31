@@ -1,9 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import apis from "../services/apis";
 
-function apiBuilder(builder, action, cb, ecb) {
-  builder.addCase(action.fulfilled, cb).addCase(action.rejected, ecb);
-}
 const CounterSlice = createSlice({
   name: "CounterSlice",
   initialState: {
@@ -21,20 +17,14 @@ const CounterSlice = createSlice({
     reset(state, action) {
       state.count = 0;
     },
-  },
-  extraReducers: (builder) => {
-    apiBuilder(
-      builder,
-      apis.getUsersList,
-      (state, action) => {
-        state.users = action.payload;
-      },
-      (state, action) => {
-        state.error = "Something went wrong, try again.";
-      }
-    );
+    getUserList() {},
+    saveUserList(state, action) {
+      console.log("final output");
+      state.users = action.payload;
+    },
   },
 });
 
 export default CounterSlice;
-export const { decrement, increment, reset } = CounterSlice.actions;
+export const { decrement, increment, reset, getUserList, saveUserList } =
+  CounterSlice.actions;
